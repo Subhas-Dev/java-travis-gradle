@@ -1,3 +1,4 @@
+#language: java
 sudo: false
 install: true
 
@@ -7,6 +8,7 @@ addons:
     token: ${{ secrets.SONAR_TOKEN }}
     
 script:
+ # Instruction
   - ./gradlew sonarqube
 
 cache:
