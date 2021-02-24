@@ -1,0 +1,17 @@
+sudo: false
+install: true
+
+addons:
+  sonarcloud:
+    organization: "subhas-dev"
+    token: ${{ secrets.SONAR_TOKEN }}
+    
+script:
+  - ./gradlew sonarqube
+
+cache:
+  directories:
+    - '$HOME/.m2/repository'
+    - '$HOME/.sonar/cache'
+    - '$HOME/.gradle'
+    - '.gradle'
