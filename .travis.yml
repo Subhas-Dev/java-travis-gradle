@@ -6,7 +6,9 @@ install: true
 addons:
   sonarcloud:
     organization: "subhas-dev"
-    token: ${{ secrets.SONAR_TOKEN }}
+    token:
+      secure: 441802eb558a1046f23a532f67d00867d145fa4d
+    #token: ${{ secrets.SONAR_TOKEN }}
     
 script:
  # Instruction
