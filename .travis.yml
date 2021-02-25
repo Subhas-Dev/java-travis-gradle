@@ -1,5 +1,6 @@
 language: java
-sudo: false
+jdk: oraclejdk11
+#sudo: false
 install: true
 
 addons:
